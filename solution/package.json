@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-training",
+  "version": "1.0.0",
+  "description": "Steps :",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alrouen/nodejs-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alrouen/nodejs-training/issues"
+  },
+  "homepage": "https://github.com/alrouen/nodejs-training#readme",
+  "dependencies": {
+    "moment": "^2.24.0",
+  }
+}
