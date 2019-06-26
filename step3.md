@@ -3,31 +3,37 @@
 
 ----
 
-## 1) Write a program that accepts one or more numbers as command-line arguments and prints the sum of those numbers to the console (stdout).
+## 1) 
+Write a program that accepts one or more numbers as command-line arguments and prints the sum of those numbers to the console (stdout).
 
 ----
 
-## 2) Write a program that uses a single synchronous filesystem operation to read a file and print the number of newlines (\n) it contains to the console (stdout), similar to running cat file | wc -l.
+## 2) 
+Write a program that uses a single synchronous filesystem operation to read a file and print the number of newlines (\n) it contains to the console (stdout), similar to running cat file | wc -l.
 
 The full path to the file to read will be provided as the first command-line argument (i.e., process.argv[2]). You do not need to make your own test file.
 
 -----
 
-## 3) Write a program that uses a single asynchronous filesystem operation to read a file and print the number of newlines it contains to the console (stdout), similar to running cat file | wc -l.
+## 3) 
+Write a program that uses a single asynchronous filesystem operation to read a file and print the number of newlines it contains to the console (stdout), similar to running cat file | wc -l.
 
 The full path to the file to read will be provided as the first command-line argument.
 
 ---- 
 
-## 4) Write a program that call a function from a custom lib
+## 4) 
+Write a program that call a function from your own custom lib
 
 ----
 
-## 5) Write a program that return the content of a HTTP GET 
+## 5) 
+Write a program that return the content of a HTTP GET 
 
 ----
 
-## 6) Write an HTTP server that serves JSON data when it receives a GET request to the path '/api/parsetime'. Expect the request to contain a query string with a key 'iso' and an ISO-format time as the value.
+## 6) 
+Write an HTTP server that serves JSON data when it receives a GET request to the path '/api/parsetime'. Expect the request to contain a query string with a key 'iso' and an ISO-format time as the value.
 
 For example:
 
