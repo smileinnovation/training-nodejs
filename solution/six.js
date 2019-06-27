@@ -13,8 +13,9 @@ function unixtime (time) {
   return { unixtime: time.getTime() }
 }
 
-const server = http.createServer(function (req, res) {
+const server = http.createServer((req, res)  => {
   const parsedUrl = url.parse(req.url, true)
+  console.log(parsedUrl.query.iso);
   const time = new Date(parsedUrl.query.iso)
   let result
 
