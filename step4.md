@@ -1,6 +1,10 @@
 
 ### Goal
 
+Learn how to use promises
+
+Resources : https://codeburst.io/a-simple-guide-to-es6-promises-d71bacd2e13a
+
 ----
 
 ## 1) 
