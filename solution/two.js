@@ -1,7 +1,11 @@
-const fs = require('fs')
+const promise = new Promise(function (fulfill, reject) {
+  // After the timeout reaches 300ms, fulfill the promise with value
+  // 'FULFILLED!'.
 
-const contents = fs.readFileSync(process.argv[2])
-const lines = contents.toString().split('\n').length - 1
-console.log(lines)
+  setTimeout(function () {
+    fulfill('FULFILLED!');
+  }, 300);
+});
 
+promise.then(console.log);
 

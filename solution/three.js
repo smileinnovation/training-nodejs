@@ -1,13 +1,22 @@
-const fs = require('fs')
-const file = process.argv[2]
+// Create a promise
 
-fs.readFile(file, function (err, contents) {
-  if (err) {
-    return console.log(err)
-  }
-  // fs.readFile(file, 'utf8', callback) can also be used
-  const lines = contents.toString().split('\n').length - 1
-  console.log(lines)
-})
+var promise = new Promise(function (fulfill, reject) {
+  // After the timeout reaches 300ms, reject the promise with an `Error` object
+  // with parameter `"REJECTED!"`.
 
+  setTimeout(function () {
+    reject(new Error('REJECTED!'));
+  }, 300);
+});
+
+// Create a function to print `error.message` using `console.log`.
+
+function onReject(error) {
+  console.log(error.message);
+}
+
+// Pass this function as a rejection handler to the `then` method of the
+// promise (the second parameter).
+
+promise.then(null, onReject);
 

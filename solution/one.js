@@ -1,8 +1,8 @@
-let result = 0
+// Set a timeout of 300ms
 
-for (let i = 2; i < process.argv.length; i++) {
-  result += Number(process.argv[i])
-}
+setTimeout(function () {
+  // After 300ms has elapsed, print out 'TIMED OUT!'
 
-console.log(result)
+  console.log('TIMED OUT!');
+}, 300);
 
