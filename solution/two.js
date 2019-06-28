@@ -17,9 +17,7 @@ const messages = [
 
 // 2.1
 const doubleAll = (numbers) => {
-  return numbers.map((number) => {
-    return number * 2
-  })
+  return numbers.map(number => number * 2)
 }
 
 // 2.2
