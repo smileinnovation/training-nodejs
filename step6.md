@@ -14,6 +14,7 @@ Resources :
 ## 1) 
 
 Start from scratch a new nodejs project, install express and apply this simple 'hello world' tutorial
+(http://expressjs.com/en/starter/hello-world.html)
 
 ----
 
