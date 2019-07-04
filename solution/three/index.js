@@ -3,8 +3,8 @@ const Joi = require('@hapi/joi');
 const uuidv4 = require('uuid/v4');
 
 const todoSchema = Joi.object().keys({
-    title:Joi.string().alphanum().min(3).max(100).required(),
-    description:Joi.string().alphanum().min(3).required(),
+    title:Joi.string().min(3).max(100).required(),
+    description:Joi.string().min(3).required(),
     done:Joi.boolean().required()
 });
 
