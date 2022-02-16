@@ -30,9 +30,7 @@ function oldFashion() {
     console.log('jquery was a revolution');
 }
 
-const teenager = () => {
-    console.log('Ok boomer');
-}
+const teenager = () => console.log('Ok boomer');
 
 oldFashion();
 teenager();
