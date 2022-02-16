@@ -88,6 +88,7 @@ We are going to demonstrate this to ourselves by creating a chain of functions t
 
 Write a program that 'promisify' a HTTP GET request. In this program you must display in the console the json returned by this URL/API call : http://api.plos.org/search?q=title:DNA
 
+## 9) 
 
-
+Await / async example
 
