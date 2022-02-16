@@ -8,6 +8,6 @@
 "Hello world
  Today is < Week day >"
  
-The week day must be display thanks to the library "moment" https://momentjs.com/
+The week day must be display thanks to the library "luxon" https://moment.github.io/luxon/#/
 
 

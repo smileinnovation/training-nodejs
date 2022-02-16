@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/alrouen/nodejs-training#readme",
   "dependencies": {
-    "moment": "^2.24.0",
+    "luxon": "^2.3.0"
   }
 }

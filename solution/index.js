@@ -1,5 +1,5 @@
-const moment = require('moment');
+const { DateTime } = require("luxon");
 
 console.log("Hello world");
-console.log(`Today is ${moment().format('dddd')}`);
+console.log(`Today is ${DateTime.now().toFormat('EEEE')}`);
 
