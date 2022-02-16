@@ -1,3 +1,4 @@
+// To test it : node ./five.js http://www.google.com
 const http = require('http')
 
 http.get(process.argv[2], function (response) {

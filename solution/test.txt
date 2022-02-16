@@ -1,0 +1,12 @@
+ten
+nine
+eight
+seven
+six
+five
+four
+three
+two
+one
+zero
+we have lift-off !

@@ -1,3 +1,6 @@
+// To run it :  node ./six.js 9000
+// To test it : curl -v "http://localhost:9000/api/parsetime?iso=2013-08-10T12:10:15.474Z"
+
 const http = require('http')
 const url = require('url')
 
