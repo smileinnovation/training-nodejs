@@ -1,11 +1,12 @@
-const promise = new Promise(function (fulfill, reject) {
+const promise = new Promise(function (resolve, reject) {
   // After the timeout reaches 300ms, fulfill the promise with value
   // 'FULFILLED!'.
 
   setTimeout(function () {
-    fulfill('FULFILLED!');
+    resolve('FULFILLED!');
   }, 300);
 });
 
+console.log("please wait...");
 promise.then(console.log);
-
+console.log("while doing something else...");

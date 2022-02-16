@@ -1,5 +1,5 @@
-const promise = new Promise(function (fulfill, reject) {
-  fulfill('PROMISE VALUE');
+const promise = new Promise(function (resolve, reject) {
+  resolve('PROMISE VALUE');
 });
 
 // At this point, the value of promise is already known.
