@@ -21,6 +21,5 @@ Steps :
 ### 6 - Building a REST API
 
 
-### 7 - Building a single page app with ReactJs
 
 
