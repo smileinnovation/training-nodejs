@@ -40,7 +40,7 @@ Build a REST API that use the books.json file, and with the help of express, to 
 ## 3) 
 
 Build a REST API to manage todos, with the help of express, and extra modules : uuid, @hapi/joi
-(uuid : https://github.com/kelektiv/node-uuid)
+(uuid : https://github.com/uuidjs/uuid)
 (@hapi/joi : https://github.com/hapijs/joi)
  
 The API must follow these requirements :

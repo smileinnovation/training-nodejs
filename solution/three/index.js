@@ -1,6 +1,6 @@
 const express = require("express");
 const Joi = require('@hapi/joi');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 const todoSchema = Joi.object().keys({
     title:Joi.string().min(3).max(100).required(),
@@ -46,8 +46,9 @@ app.post('/todo', (req, res, next) => {
             const id = uuidv4();
             todos.set(id, req.body);
             res.json({id}).end();
+        } else {
+            res.status(400).end(JSON.stringify({error: validation.error}));
         }
-        res.status(400).end(JSON.stringify({error: validation.error}));
     }
     res.status(400).end();
 });
@@ -71,3 +72,12 @@ app.put('/todo/:id/ongoing', (req, res, next) => {
 });
 
 app.listen(3000);
+
+/*
+* Curl :
+*  Create todo: curl -XPOST http://localhost:3000/todo -d '{"title":"my todo", "description":"something important to do", "done":false}' -H 'Content-Type: application/json'
+*  Get todos : curl http://localhost:3000/todo
+*  Get a todo : curl http://localhost:3000/todo/XXXXXX
+*  Set a todo as done : curl -XPUT http://localhost:3000/todo/XXXXXXX/done
+*  Set a todo as ongoing : curl -XPUT http://localhost:3000/todo/XXXXXXX/ongoing
+* */

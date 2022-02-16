@@ -61,3 +61,11 @@ typings/
 
 # next.js build output
 .next
+
+package-lock.json
+solution/one/package-lock.json
+solution/one/node_modules
+solution/two/package-lock.json
+solution/two/node_modules
+solution/three/package-lock.json
+solution/three/node_modules
